@@ -1,0 +1,50 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="project1.controller.View2" displayBlock="true" class="view1">
+<VBox id="vbox1"  alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/2560px-Wipro_Primary_Logo_Color_RGB.svg.png" width="120px" height="90px" id="image0"/>
+
+        <Label class="iptitle" id="labelId" text="WIPRO||MART " textAlign="Right"/>
+
+       
+        </VBox>
+         
+
+            <Button xmlns="sap.m" class="ip1" text="Home" id="AddProductInventory" type="Unstyled" press="Home" width="10%" icon="sap-icon://home"/>
+
+           
+
+ 
+ <VBox id="vbox2" class="loginvBox2" width="40%" height="40%" justifyContent="SpaceBetween" alignContent="SpaceBetween" alignItems="Center" backgroundDesign="Solid">
+
+           
+            <VBox id="vbox3" class="loginvBox3" alignItems="Center" direction="Row" alignContent="SpaceBetween" justifyContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="Username  " id="username" required="true" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_username" textAlign="Center" type="Email" required="true" fieldWidth="100%" placeholder="Enter Your Username" />
+
+            </VBox>
+
+            <VBox id="vbox4" class="loginvBox4" alignItems="Center" direction="Row" alignContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="password  " required="true" id="password" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_password" textAlign="Center" type="Password" required="true" fieldWidth="100%" placeholder="Enter Your Password" />
+
+            </VBox>
+       
+
+            <Button xmlns="sap.m" class="button1" text="Login" id="Login" type="Unstyled" press="onLoginUser" width="100%" icon= "sap-icon://log" />
+           
+             <Button xmlns="sap.m" class="button2" text="Signup" id="Signup" type="Unstyled" press="onSignUser" width="100%" icon= "sap-icon://log" />
+           
+           
+               
+
+        </VBox> 
+       
+       
+              <VBox id="vbox7" class="ipmessage" alignContent="Inherit" alignItems="Center">
+                <MessageStrip xmlns="sap.m" text="Congratulations! You have successfully logged in...!" showIcon="false" showCloseButton="true" id="strip0" type="Success" />
+            </VBox> 
+           
+        </mvc:View>

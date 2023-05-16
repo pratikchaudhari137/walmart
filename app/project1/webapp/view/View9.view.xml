@@ -1,0 +1,1404 @@
+<mvc:View
+
+    controllerName="project1.controller.View9"
+
+    xmlns:l="sap.ui.layout"
+
+    xmlns:mvc="sap.ui.core.mvc"
+
+    xmlns:f="sap.f"
+
+   xmlns:grid="sap.ui.layout.cssgrid"
+
+    xmlns="sap.m">
+
+    <Page id="_IDGenPage1">
+
+
+ 
+
+
+     <VBox id="vbox1" class="ipheader" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/2560px-Wipro_Primary_Logo_Color_RGB.svg.png" width="120px" height="90px" id="image0"/>
+
+
+        <Label class="iptitle" id="labelId" text="WIPROMART " textAlign="Right"/>
+
+
+        <HBox id="hbox1" class="hBox1" displayInline="true" fitContainer="true">
+
+         
+
+
+ <HBox id="_IDGenHBox1" class="HBox0">
+
+                <Input width="600px" placeholder="Select Product Category" id="productSearch" liveChange="onFilter1" class="spc" type="Url"/>
+
+
+                <Button id="_IDGenButton1" class="searchbutton" press="searchProduct" text="Search" type="Emphasized" icon="sap-icon://search"/>
+
+            </HBox> 
+
+
+       
+
+       
+
+            <Button xmlns="sap.m" class="ipbutton2" text="Wishlist" id="AddProductInventory" type="Unstyled" press="addProductInventory" width="100%" icon="sap-icon://heart-2"/>
+
+
+            <Button xmlns="sap.m" class="ipbutton3" text="Cart" id="AnalyticDashboard" type="Unstyled" press="analyticsDashboard" width="100%" icon="sap-icon://cart-5"/>
+
+
+            <Button xmlns="sap.m" class="ipbutton1" text="Address" id="AddProductMaster" type="Unstyled" press="addProductMaster" width="100%" icon="sap-icon://map"/>
+
+
+            <MenuButton xmlns="sap.m" class="ipbutton4" text="Pratik" id="user" type="Unstyled" width="100%" icon="sap-icon://employee">
+
+
+                <menu>
+
+
+                    <Menu id="_IDGenMenu1">
+
+
+                        <MenuItem id="_IDGenMenuItem1" text="LogOut" icon="sap-icon://log" press="onLogOut"/>
+
+
+
+                    </Menu>
+
+                   
+
+                </menu>
+
+
+            </MenuButton>
+
+           
+
+         
+
+       
+
+        </HBox>
+
+    </VBox>
+
+
+     <!-- <VBox id="vbox2" class="ipheader1" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+
+     
+
+
+        <HBox id="hbox2" class="hBox1" displayInline="true" fitContainer="true">
+
+
+           
+
+        <HBox id="_IDGenHBox2" class="ipbutton7">
+
+       
+
+        <items>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select5" icon="sap-icon://log">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Today' deal" id="item10" />
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Footwear" id="item11"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Shirt" id="item12"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item14"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-5" text="Kids" id="item42"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select4">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Best Seller" id="item8"  />
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobiles" id="item9"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Smart Watch" id="item43"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Books" id="item44"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Toys" id="item45"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select3">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="New Arrivals" id="item6"  />
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item7"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item46"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item47"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item48"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select2">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Fashion" id="item4"  />
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Men's Top wear" id="item5"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Men's Footwear" id="item23"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Women's Top wear" id="item24"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Women's Footwear" id="item25"/>
+
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select1">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Beauty" id="item2"  />
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Eye shadow" id="item3"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Lipstick" id="item26"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Eyeliner" id="item27"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Foundation" id="item28"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select0_1679037485238">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Electronics" id="item0_1679037485238"/>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="TV" id="item1_1679037485238"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="AC" id="item29"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Refrigerator" id="item30"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="washing Machine" id="item31"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select0_1679036979187">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Accessories" id="item0_1679036979187"/>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobile Cables" id="item1_1679036979187"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobile Holders" id="item32"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Headphones" id="item33"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Airpods" id="item34"/>
+
+           
+
+         
+
+       
+
+                </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+           
+
+         
+
+       
+
+            <Select xmlns="sap.m" id="select0">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Kitchen" id="item0"/>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Kitchen containers" id="item1"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Gas Stoves" id="item35"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dinner Sets" id="item36"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Pressure Cooker" id="item37"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+
+            <Select xmlns="sap.m" id="select6">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Grocery" id="item15"/>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dry Fruits" id="item38" />
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Rice" id="item39"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Butter" id="item40"/>
+
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-5" text="Namkeen" id="item41"/>
+
+           
+
+         
+
+       
+
+                    </items>
+
+           
+
+         
+
+       
+
+               
+
+           
+
+         
+
+       
+
+            </Select>
+
+
+            <Select xmlns="sap.m" id="select7">
+
+           
+
+         
+
+       
+
+                <items>
+
+           
+
+         
+
+       
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Travel" id="item89"/>
+
+       
+
+         
+
+       
+
+                    </items>
+
+           
+
+   
+
+       
+
+            </Select>
+
+     
+
+     
+
+           
+
+         
+
+       
+
+        </items>
+
+
+        </HBox>
+
+           
+
+         
+
+       
+
+        </HBox>
+
+    </VBox>-->
+ 
+
+<Carousel id="_IDGenCarousel1"  loop="true" width="100%" height="380px" >
+
+
+ 
+
+
+        <Image id="_IDGenImage88" src="https://cdn.luxe.digital/media/2020/06/06175223/best-dress-watches-luxe-digital%402x.jpg" width="90%" alt="Example picture of USB flash drive" /> -->
+
+       
+
+    </Carousel>
+
+        <l:HorizontalLayout id="_IDGenHorizontalLayout1">
+
+
+   
+
+
+    <FlexBox id="_IDGenFlexBox1" direction="Column" alignItems="Start"  width="10%">
+
+
+ <Label id="_IDGenLabel1" text="Discount" class="filter"></Label>
+
+
+  <Button id="_IDGenButton9" text="10% and above" type="Default" />
+
+
+ <Button id="_IDGenButton10" text="20% and above" type="Default" />
+
+
+ <Button id="_IDGenButton11" text="50% and above" type="Default" />
+
+
+ </FlexBox>
+
+
+ <SlideTile id="_IDGenSlideTile9" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+
+            <GenericTile id="_IDGenGenericTile17"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/a/j/h/-original-imagnre48fkdymx7.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent17" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent17"
+
+                        contentText="dezmer ms Running Shoes For Men  (Grey)"
+
+                        subheader="₹2,649" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile18"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/b/n/u/s-wx-d-pocket-102-grey-woxen-original-imagm4huvke5djre.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent18" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent18"
+
+                        contentText="Casual Sneakers White Outdoor Shoes For Boys And Men Sneakers For Men  (White)"
+
+                        subheader="₹494" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile10" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile19"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/q/h/z/7-mrj1852-7-aadi-black-original-imagdwgudezandfs-bb.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent19" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent19"
+
+                        contentText="Synthetic Leather For Men  (Black)"
+
+                        subheader=" Special price  ₹429 " />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile20"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/kiow6fk0-0/t-shirt/i/e/s/s-3081j7107i-905-united-colors-of-benetton-original-imafyf6gzc3sygjk.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent20" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent20"
+
+                        contentText="Men Solid Polo Neck Light Blue T-Shirt"
+
+                        subheader="₹1,166" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+       
+
+        <SlideTile id="_IDGenSlideTile6" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile11"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/o/u/c/46-pisx00406-m9-park-avenue-original-imagmvhyrfftvynz.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent11" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent11"
+
+                        contentText="Men Slim Fit Striped Formal Shirt"
+
+                        subheader="Special price ₹1,349" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile12"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/kk2wl8w0/shirt/o/c/d/m-5ns14u008i-903-united-colors-of-benetton-original-imafzg6etfe9wbuy.jpeg?q=70">
+
+                <TileContent id="_IDGenTileContent12" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent12"
+
+                        contentText="Men Slim Fit Checkered Button Down Collar Casual Shirt"
+
+                        subheader="₹3,499" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile7" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile13"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/jean/x/4/c/-original-imaghjahuekff2nx.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent13" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent13"
+
+                        contentText="Men Skinny Mid Rise Grey Jeans "
+
+                        subheader="Special price  ₹1,649 " />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile14"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/trouser/c/u/c/-original-imafz4xzvsmubejz.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent14" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent14"
+
+                        contentText="Men Slim Fit Light Blue Pure Cotton Trousers"
+
+                        subheader="₹1,689" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile8" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile15"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/trouser/t/f/d/34-lcmtcb91st00533-e6-linen-club-original-imagkzh9w8dzydyt.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent15" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent15"
+
+                        contentText="Men Slim Fit Grey Pure Linen Trousers "
+
+                        subheader="₹2,399" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile16"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/short/i/e/l/xxl-premium-fabric-sport-short-yazole-original-imaggwvy3gqzuusd.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent16" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent16"
+
+                        contentText=" Pack of 2 Solid Men Black, Grey Sports Shorts"
+
+                        subheader="₹366" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+</l:HorizontalLayout>
+
+
+<l:HorizontalLayout id="_IDGenHorizontalLayout2" >
+
+
+<FlexBox id="_IDGenFlexBox2" direction="Column" alignItems="Start"   width="10%">
+
+
+ <Label id="_IDGenLabel2" text="Customer Review " class="filter"></Label>
+
+
+ <VBox id = "vbox11" class = "vb_text" width="0%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+
+ <RatingIndicator id="RI_XS1" maxValue="5" class="sapUiSmallMarginBottom" value="5" iconSize="12px" tooltip="Rating Tooltip" />
+
+
+ </VBox>
+
+
+ <VBox id = "vbox12" alignItems="Center" direction="Row" displayInline="true" alignContent="Start"  class="filter" width="10%">
+
+
+ <RatingIndicator id="RI_XS2" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="12px" tooltip="Rating Tooltip" />
+
+
+ <Label id="two" text="and up"></Label>
+
+
+ </VBox>
+
+
+ <VBox id = "vbox13"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+
+ <RatingIndicator id="RI_XS3" maxValue="5" class="sapUiSmallMarginBottom" value="3" iconSize="12px" tooltip="Rating Tooltip" />
+
+
+ <Label id="three" text="and up"></Label>
+
+
+ </VBox>
+
+
+ <VBox id = "vbox14"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+
+ <RatingIndicator id="RI_XS4" maxValue="5" class="sapUiSmallMarginBottom" value="2" iconSize="12px" tooltip="Rating Tooltip" />
+
+
+ <Label id="four" text="and up"></Label>
+
+
+</VBox>
+
+
+ <VBox id = "vbox15"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+
+ <RatingIndicator id="RI_XS5" maxValue="5" class="sapUiSmallMarginBottom" value="1" iconSize="12px" tooltip="Rating Tooltip" />
+
+
+ <Label id="five" text="and up"></Label>
+
+
+ </VBox>
+
+ </FlexBox>
+
+
+<SlideTile id="_IDGenSlideTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile1"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/ksw4ccw0/watch/6/b/c/38024pp25-fastrack-men-original-imag6cu9xkhbgz4y.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent1" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent1"
+
+                        contentText="Minimalists Analog Watch - For Men 38024PP25"
+
+                        subheader="₹850" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile2"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/kdlzte80/watch/k/n/q/a551-casio-original-imafuheesmupewvr.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent2" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent2"
+
+                        contentText="Enticer Men's ( MTP-1314D-2AVDF ) Analog Watch - For Men A551"
+
+                        subheader="₹2,395" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+
+            <GenericTile id="_IDGenGenericTile3"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/watch/r/1/b/-original-imagnqcgfgeufxvv.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent3" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent3"
+
+                        contentText="Analog Watch - For Men NM1712YM02"
+
+                        subheader=" ₹1,995" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile4"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/kurta/0/f/o/xl-jjoint0115-deemoon-original-imaghdywcx7chdkh.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent4" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent4"
+
+                        contentText="Pack of 2 Men Solid Cotton Blend Straight Kurta  (Green, Red)"
+
+                        subheader="₹899" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+
+            <GenericTile id="_IDGenGenericTile5"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/sweatshirt/f/a/x/xl-lav-faith-hope-love-black-uniexcluive-original-imaghnzk4gdrhdrf.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent5" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent5"
+
+                        contentText="Men Full Sleeve Graphic Print Sweatshirt"
+
+                        subheader="₹472" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile6"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/400/400/kfyasnk0/bean-bag-cover/5/b/n/xxl-gar-field-artwork-2-garfield-original-imafwaxy5hgjvsh2.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent6" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent6"
+
+                        contentText="Fire-Boltt Ninja Talk 1.39 Round Bluetooth Calling Smartwatch, Metal Body, 120 Sports Modes Smartwatch  (Pink Strap, 1.39)"
+
+                        subheader="₹1,799" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop" >
+
+            <GenericTile id="_IDGenGenericTile7"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/kwpam4w0/jacket/k/t/q/xxl-no-14296130-wrogn-original-imag9bmyjzrauxww.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent7" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent7"
+
+                        contentText="Men Solid Bomber Jacket"
+
+                        subheader=" ₹1,799" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile8"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/backpack/u/f/r/-original-imaghdu5kghvfwpr.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent8" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent8"
+
+                        contentText="Small 17 L Backpack Zeal  (Red)"
+
+                        subheader="₹899" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+</l:HorizontalLayout>
+
+
+<l:HorizontalLayout id="_IDGenHorizontalLayout3" >
+
+<VBox id="_IDGenFlexBox3" >
+
+<Label id="_IDGenLabel3" text="Price" class="filter"></Label>
+
+
+ <Button id="_IDGenButton12" text="under 1000" type="Default" />
+
+
+ <Button id="_IDGenButton13" text="1000 - 2000" type="Default" />
+
+
+ <Button id="_IDGenButton14" text ="2000-5000" type ="Default"/>
+
+
+ <Button id="_IDGenButton15" text ="5000 and above" type = "Default"/>
+
+ </VBox>
+
+
+ <SlideTile id="_IDGenSlideTile5" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+
+            <GenericTile id="_IDGenGenericTile9"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/jltrl3k0/cap/t/z/v/free-5291124-puma-original-imaf8ugga4vwf4hf.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent9" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent9"
+
+                        contentText="Sports/Regular Cap"
+
+                        subheader="₹1,679" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile10"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/sock/9/i/8/free-4-sg-fk-4pk-1-swagr-original-imaggz6waegyyxf5.jpeg?q=70">
+
+                <TileContent id="_IDGenTileContent10" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent10"
+
+                        contentText="Men Striped Ankle Length  (Pack of 4)"
+
+                        subheader="₹169" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile456" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile113"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/vest/w/d/t/m-gf-mvest-mrn-blck-mil-nvy-4pcs-m-gyrfalcon-original-imaggxbhbnryc6c6.jpeg?q=70" >
+
+                <TileContent id="_IDGenTileContent115" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent113"
+
+                        contentText="Pack of 4 Men Vest"
+
+                        subheader="₹1,189" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile172"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/boxer/n/z/c/m-3-mb3c043-metronaut-original-imagmbdepfrxzhpz.jpeg?q=70">
+
+                <TileContent id="_IDGenTileContent152" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent125"
+
+                        contentText=" Pack of 3 Checkered Men Boxer"
+
+                        subheader="₹499" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile85" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile1385"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/track-suit/o/w/n/s-na-combokts1511-ksh708-kraasa-original-imagzyk8pxqcgbpk.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent1853" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent135"
+
+                        contentText=" Men Top and Shorts Set Black Printed"
+
+                        subheader="₹359" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile145"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/jewellery-set/f/o/w/na-na-holo-combo-brandsoon-original-imaghjn6gsjvyydw.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent146" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent145"
+
+                        contentText="Gold-plated Plated Brass Chain Set"
+
+                        subheader="₹199" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+        <SlideTile id="_IDGenSlideTile81" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+
+            <GenericTile id="_IDGenGenericTile151"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/k0zlsi80/thermal/h/w/h/xxl-uzmtvhnny-uzarus-original-imafknshydbaeubf.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileOne" >
+
+                <TileContent id="_IDGenTileContent151" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent152"
+
+                        contentText="UZARUS Men's Solid High Neck Thermal Wear Top Men Top Thermal "
+
+                        subheader="₹404" />
+
+                </TileContent>
+
+            </GenericTile>
+
+            <!-- <GenericTile id="_IDGenGenericTile116"
+
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/l3khsi80/track-suit/k/s/c/xxl-tracksuit-5031grey-chrome-coral-original-imagenwqp4tectf8.jpeg?q=70"
+
+                frameType="TwoByOne" press="pressOnTileTwo">
+
+                <TileContent id="_IDGenTileContent163" footer="March 31, 2023">
+
+                    <NewsContent id="_IDGenNewsContent16."
+
+                        contentText="Men Co-ords Grey Colorblock"
+
+                        subheader="₹448" />
+
+                </TileContent>
+
+            </GenericTile> -->
+
+        </SlideTile> 
+
+
+
+</l:HorizontalLayout>
+</Page>
+
+    </mvc:View>
+
+
+
+
+
+
+

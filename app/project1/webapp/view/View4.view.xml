@@ -1,0 +1,583 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:main="sap.ui.webc.main" controllerName="project1.controller.View4" displayBlock="true" class="View4" height="100%">
+
+     
+    <Page id="_IDGenPage1"  >
+   <VBox id="vbox1" class="ipheader" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/2560px-Wipro_Primary_Logo_Color_RGB.svg.png" width="120px" height="90px" id="image0"/>
+
+        <Label class="iptitle" id="labelId" text="WIPROMART " textAlign="Right"/>
+
+        <HBox id="hbox1" class="hBox1" displayInline="true" fitContainer="true">
+         
+
+ <HBox id="_IDGenHBox1" class="HBox0">
+                <Input width="600px" placeholder="Select Product Category" id="productSearch" liveChange="onFilter1" class="spc" type="Url"/>
+
+                <Button id="_IDGenButton1" class="searchbutton" press="searchProduct" text="Search" type="Emphasized" icon="sap-icon://search"/>
+            </HBox> 
+
+       
+       
+            <Button xmlns="sap.m" class="ipbutton2" text="Wishlist" id="AddProductInventory" type="Unstyled" press="onAddToWishListPress" width="100%" icon="sap-icon://heart-2"/>
+
+            <Button xmlns="sap.m" class="ipbutton3" text="Cart" id="AnalyticDashboard" type="Unstyled" press="onAddToWishListPress" width="100%" icon="sap-icon://cart-5"/>
+
+            <Button xmlns="sap.m" class="ipbutton1" text="Address" id="AddProductMaster" type="Unstyled" press="addProductMaster" width="100%" icon="sap-icon://map"/>
+               
+					
+			
+            <MenuButton xmlns="sap.m" class="ipbutton4" text="Pratik" id="user" type="Unstyled" width="100%" icon="">
+
+                <menu>
+
+                    <Menu id="_IDGenMenu1">
+
+                        <MenuItem id="_IDGenMenuItem1" text="LogOut"  press="onLogOut"/>
+
+
+                    </Menu>
+                   
+                </menu>
+
+            </MenuButton>
+           
+         
+       
+        </HBox>
+    </VBox>
+<!-- <VBox id="_IDGenVBox1" alignItems="Center">
+					<main:Avatar id="_IDGenAvatar1"
+							size="XL"
+							shape="Square"
+							interactive="true"
+							click="handleClick">
+							<Image id="_IDGenImage5" src="Woman02" />
+					</main:Avatar>
+					<Text id="_IDGenText1"
+							text="Avatar of a product"
+							class="sapUiSmallMarginTop"/>
+				</VBox> -->
+   
+
+    <VBox id="vbox2" class="ipheader1" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+     
+
+         <HBox id="hbox2" class="hBox1" displayInline="true" fitContainer="true"> 
+
+           
+        <HBox id="_IDGenHBox2" class="ipbutton7"> 
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton1" xmlns="sap.m" class="ipbutton4" text="Footwear"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu11">
+
+                        <MenuItem id="_IDGenMenuItem2" text="footwear"  press="footwear"/>
+                        <!-- <MenuItem id="_IDGenMenuItem3" text="Shirt"  press="Shirt"/>
+                        <MenuItem id="_IDGenMenuItem4" text="Airpods"  press="Airpods"/>
+                        <MenuItem id="_IDGenMenuItem5" text="Kids"  press="Kids"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton>
+        </items>
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton2" xmlns="sap.m" class="ipbutton4" text="Mobile"   type="Unstyled" width="100%" >
+
+                 <menu>
+
+                    <Menu id="_IDGenMenu12">
+
+                        <MenuItem id="_IDGenMenuItem6" text="Mobiles"  press="Mobiles"/>
+                        <!-- <MenuItem id="_IDGenMenuItem7" text="Shirt"  press="Shirt"/>
+                        <MenuItem id="_IDGenMenuItem8" text="Books"  press="Books"/>
+                        <MenuItem id="_IDGenMenuItem9" text="Toys"  press="Toys"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton> 
+        </items>
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton3" xmlns="sap.m" class="ipbutton4" text="Grocery"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu13">
+
+                        <MenuItem id="_IDGenMenuItem10" text="grocery"  press="grocery"/>
+                        <!-- <MenuItem id="_IDGenMenuItem11" text="Men's Foot wear"  press="MenFootwear"/>
+                        <MenuItem id="_IDGenMenuItem12" text="omMen's Top wear"  press="WomMenTopwear"/>
+                        <MenuItem id="_IDGenMenuItem13" text="WoMen's Foot wear"  press="WoMenFootwear"/>-->
+                    </Menu> 
+                   
+                </menu>
+        
+            </MenuButton>
+        </items>
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton4" xmlns="sap.m" class="ipbutton4" text="Beauty"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu14">
+
+                        <MenuItem id="_IDGenMenuItem14" text="Beauty"  press="Beauty"/>
+                        <!-- <MenuItem id="_IDGenMenuItem15" text="Lipstick"  press="Lipstick"/>
+                        <MenuItem id="_IDGenMenuItem16" text="Eyeliner"  press="Eyeliner"/>
+                        <MenuItem id="_IDGenMenuItem17" text="Foundation"  press="Foundation"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton>
+        </items> 
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton5" xmlns="sap.m" class="ipbutton4" text="Electronics"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu15">
+
+                        <MenuItem id="_IDGenMenuItem18" text="Electronics"  press="Electronics"/>
+                        <!-- <MenuItem id="_IDGenMenuItem19" text="AC"  press="AC"/>
+                        <MenuItem id="_IDGenMenuItem20" text="Refrigerator"  press="Refrigerator"/>
+                        <MenuItem id="_IDGenMenuItem21" text="washing Machine"  press="washingMachine"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton>
+        </items> 
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton6" xmlns="sap.m" class="ipbutton4" text="Fashion"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu16">
+
+                        <MenuItem id="_IDGenMenuItem22" text="Fashion"  press="Fashion"/>
+                        <!-- <MenuItem id="_IDGenMenuItem23" text="Mobile Holders"  press="MobileHolders"/>
+                        <MenuItem id="_IDGenMenuItem24" text="Headphones"  press="Headphones"/>
+                        <MenuItem id="_IDGenMenuItem25" text="Airpods"  press="Airpods"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton>
+        </items> 
+        <items>
+      
+            <MenuButton id="_IDGenMenuButton7" xmlns="sap.m" class="ipbutton4" text="Kitchen"  type="Unstyled" width="100%" >
+
+                <menu>
+
+                    <Menu id="_IDGenMenu17">
+
+                        <MenuItem id="_IDGenMenuItem26" text="Kitchen"  press="Kitchen"/>
+                        <!-- <MenuItem id="_IDGenMenuItem27" text="Gas Stoves"  press="GasStoves"/>
+                        <MenuItem id="_IDGenMenuItem28" text="Dinner Sets"  press="DinnerSets"/>
+                        <MenuItem id="_IDGenMenuItem29" text="Pressure Cooker"  press="PressureCooker"/> -->
+                    </Menu>
+                   
+                </menu>
+        
+            </MenuButton>
+        </items> 
+         
+
+            
+         
+       
+            
+           
+         
+       
+            
+<!--        
+       
+            <Select xmlns="sap.m" id="select0">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Kitchen" id="item0"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Kitchen containers" id="item1"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Gas Stoves" id="item35"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dinner Sets" id="item36"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Pressure Cooker" id="item37"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+
+            <Select xmlns="sap.m" id="select6">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Grocery" id="item15"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dry Fruits" id="item38" />
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Rice" id="item39"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Butter" id="item40"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-5" text="Namkeen" id="item41"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+
+            <Select xmlns="sap.m" id="select7">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Travel" id="item89"/>
+       
+         
+       
+                    </items>
+           
+   
+       
+            </Select>-->
+     
+     
+           
+         
+       
+        
+
+        </HBox>
+           
+         
+       
+        </HBox>
+    </VBox>
+    
+
+<Carousel id="_IDGenCarousel1" class="sapUiContentPadding" loop="true" width="100%" height="380px">
+
+        <Image id="_IDGenImage1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/Header/Electronics_PC.gif" alt="Example picture of USB flash drive" />
+        <Image id="_IDGenImage2" src="https://hotdealszone.in/wp-content/uploads/2019/07/Amazon-Electronics-Offers-1024x277.jpg" alt="Example picture of speakers" />
+        <Image id="_IDGenImage3" src="https://hotdealszone.in/wp-content/uploads/2019/07/Amazon-Electronics-Sale-1024x252.jpg" alt="Example picture of USB flash drive" />
+        <Image id="_IDGenImage4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonBusiness/AB_EventMLP/1058_AB_EOYS_AMZin_1500x200_B_2.gif" alt="Example picture of spotlight" />
+       
+    </Carousel>
+
+<l:HorizontalLayout id="_IDGenHorizontalLayout1">
+         <SlideTile id="_IDGenSlideTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile1"
+                backgroundImage="data:image/jpeg;base64,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"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent1" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent1"
+                        contentText="realme Band 2 with Large 1.4 HD Display  5ATM Water Resistance  (Grey Strap, Size : Free Size)#JustHere"
+                        subheader="Gadgets" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile2"
+                backgroundImage="data:image/jpeg;base64,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"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent2" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent2"
+                        contentText="Electronics Get UP to 20% OFF"
+                        subheader="Best of Electronics" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile3"
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/rack-shelf/o/n/b/storage-stainless-steel-4-in-1-chakla-belan-tawa-chimta-stand-original-imafz3uzxscyz6gg.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent3" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent3"
+                        contentText="SPARTAN STEEL Stainless Steel 4 in 1 Chakla/Belan/Tawa/Chimta Stand Chakla"
+                        subheader="Home Kitchen" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile4"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/v/q/x/7-gb2089-9-5-reebok-forst-berry-punch-berry-original-imagg6m83zfsh2xv.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent4" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent4"
+                        contentText="Shoes Get UP to 20% OFF"
+                        subheader="Best of Footwear" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile5"
+                backgroundImage="https://1.bp.blogspot.com/-1SHlVwBg-LQ/YQJ5JDMCcII/AAAAAAAAAYg/1w72FZeRYxMYiKAc-h5uMVo6i62PDqmIACLcBGAsYHQ/s620/111.jpg"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent5" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent5"
+                        contentText="Thums Up 50% OFF "
+                        subheader="SoftDrinks" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile6"
+                backgroundImage="https://rukminim1.flixcart.com/image/400/400/kfyasnk0/bean-bag-cover/5/b/n/xxl-gar-field-artwork-2-garfield-original-imafwaxy5hgjvsh2.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent6" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent6"
+                        contentText="Bean Bag Get UP to 20% OFF"
+                        subheader="Best Of Space Saver" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+<SlideTile id="_IDGenSlideTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile7"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/k5vcya80pkrrdj/speaker/laptop-desktop-speaker/n/4/y/zebronics-zeb-warrior-original-imafmypt3mkuchdc.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent7" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent7"
+                        contentText="ZEBRONICS ZEB-WARRIOR 10 W Laptop/Desktop Speaker  (Black, Black, 2.0 Channel) "
+                        subheader="Best Of Sounds" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile8"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/khuvxjk0-0/vehicle-pull-along/x/w/y/friction-powered-mini-monster-cars-for-kids-with-big-rubber-original-imafxruqgz7rw4xw.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent8" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent8"
+                        contentText="Mirana USB Rechargeable Racing RC Car | High Speed Remote Control Toy  (Dark Purple)"
+                        subheader="Best Of Kids" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+       
+        </l:HorizontalLayout>
+
+
+<l:HorizontalLayout id="_IDGenHorizontalLayout2">
+         <SlideTile id="_IDGenSlideTile5" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile9"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent9" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent9"
+                        contentText="APPLE 2020 Macbook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur) MGN63HN/A  (13.3 inch, Space Grey, 1.29 kg)"
+                        subheader="Best Of Laptop" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile10"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent10" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent10"
+                        contentText="Lenovo IdeaPad Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15ACH6 Gaming Laptop "
+                        subheader="Best of Laptop" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile6" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile11"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/kh2b4i80/dishwasher-new/2/n/z/dt8b-voltas-beko-original-imafx549wzf5pdwz.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent11" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent11"
+                        contentText="BOSCH SMS66GI01I Free Standing 13 Place Settings Intensive Kadhai Cleaning| No Pre-rinse Required Dishwasher"
+                        subheader="Dishwasher" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile12"
+                backgroundImage="https://rukminim1.flixcart.com/image/300/300/xif0q/microwave-new/q/t/u/-original-imagjnnzapcq7gmu.jpeg?q=90"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent12" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent12"
+                        contentText=" IFB 30 L Convection Microwa..."
+                        subheader="Best of Kitchen" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile7" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile13"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/kwwfte80/jewellery-set/s/u/z/na-plastic-cm00116lc-arts-chetan-original-imaf93bbwmtcqqhg.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent13" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent13"
+                        contentText="ARTS CHETAN
+Brass Gold-plated Gold Jewel Set  (Pack of 1) "
+                        subheader="Best of Jwellery" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile14"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/top/p/f/n/l-black-puff-sleeve-top-zeugen-original-imagmu89tntmrbhx.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent14" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent14"
+                        contentText="IUGA
+Party Regular Sleeves Embroidered Women Black Top"
+                        subheader="Party wear" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile8" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile15"
+                backgroundImage="https://rukminim1.flixcart.com/image/416/416/kjuby4w0/ball/a/0/t/120-130-red-heavy-cricket-cricket-tennis-ball-pack-of-1-6-original-imafzbu43qf26abw.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent15" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent15"
+                        contentText="Rockjon Red Heavy Cricket Cricket Tennis Ball (Pack of 1) Cricket Tennis Ball  (Pack of 1) "
+                        subheader="Best Of Sports" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile16"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/kcuug7k0/bat/j/n/6/900-1100-6-cricket-bat-6575-ceat-six-hitman-original-imaftvxkywe3ujvh.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent16" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent16"
+                        contentText="Ceat six hitman CRICKET BAT Poplar Willow Cricket Bat  (900-1100 g)"
+                        subheader="Best Of Sports" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+       
+        </l:HorizontalLayout>
+
+        <l:HorizontalLayout id="_IDGenHorizontalLayout3">
+         <SlideTile id="_IDGenSlideTile9" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile17"
+                backgroundImage="https://rukminim1.flixcart.com/image/832/832/xif0q/kids-t-shirt/g/y/b/9-10-years-mactshrt377-disney-by-miss-chief-original-imagmgnqj4kqjegf.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent17" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent17"
+                        contentText="DISNEY BY MISS  CHIEF
+Boys Printed Cotton Blend T Shirt  (Multicolor, Pack of 3)"
+                        subheader="Kids" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile18"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/b/n/u/s-wx-d-pocket-102-grey-woxen-original-imagm4huvke5djre.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent18" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent18"
+                        contentText="WOXEN Men Slim Fit Solid Spread Collar Casual Shirt"
+                        subheader="Best of Men" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile10" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile19"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/kybvo280/sweatshirt/e/e/h/m-kttwomensweatshirt158-kotty-original-imagakueywnyzd8r.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent19" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent19"
+                        contentText="KOTTY
+Women Full Sleeve Printed Hooded Sweatshirt"
+                        subheader=" Best Of Women " />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile20"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shrug/i/q/z/xs-1-maroon-rust-top-sangouri-original-imagkh9yhccbpdrp.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent20" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent20"
+                        contentText="SANGOURI Women 3/4th Sleeve Maroon Shrug"
+                        subheader="Best of Women" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile11" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile21"
+                backgroundImage="https://m.media-amazon.com/images/S/aplus-media/vc/6a79d073-e691-4d41-b591-29937a192149.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent21" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent21"
+                        contentText="Beauty Up 50% OFF "
+                        subheader="Best Of Beauty" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile22"
+                backgroundImage="https://m.media-amazon.com/images/I/61M-FseWeeL._AC_UL800_FMwebp_QL65_.jpg"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent22" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent22"
+                        contentText="Swiss Beauty Glitter gel moisturizing Lipstick| Long Lasting, Hydrating Lipstick for dry and Chapped lips | Shade-03, 3.6gm|"
+                        subheader="Best Of Lipstick" />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile12" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile23"
+                backgroundImage="https://m.media-amazon.com/images/I/812YsUxpyfL._AC_SR360,240_QL70_.jpg"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent23" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent23"
+                        contentText="Samsung Galaxy M33 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately "
+                        subheader="Best Of Mobile" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile id="_IDGenGenericTile24"
+                backgroundImage="https://m.media-amazon.com/images/I/71V--WZVUIL._AC_UY436_FMwebp_QL65_.jpg"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent24" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent24"
+                        contentText="OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)"
+                        subheader="Best Of OnePlus " />
+                </TileContent>
+            </GenericTile>
+        </SlideTile> 
+
+       
+        </l:HorizontalLayout>
+   
+
+
+   </Page>
+</mvc:View>

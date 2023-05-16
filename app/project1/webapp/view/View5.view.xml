@@ -1,0 +1,804 @@
+<mvc:View
+    controllerName="project1.controller.View5"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+   xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="sap.m">
+    <Page id="_IDGenPage1">
+
+ 
+
+     <VBox id="vbox1" class="ipheader" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/2560px-Wipro_Primary_Logo_Color_RGB.svg.png" width="120px" height="90px" id="image0"/>
+
+        <Label class="iptitle" id="labelId" text="WIPROMART " textAlign="Right"/>
+
+        <HBox id="hbox1" class="hBox1" displayInline="true" fitContainer="true">
+         
+
+ <HBox id="_IDGenHBox1" class="HBox0">
+                <Input width="600px" placeholder="Select Product Category" id="productSearch" liveChange="onFilter1" class="spc" type="Url"/>
+
+                <Button id="_IDGenButton1" class="searchbutton" press="searchProduct" text="Search" type="Emphasized" icon="sap-icon://search"/>
+            </HBox> 
+
+       
+       
+            <Button xmlns="sap.m" class="ipbutton2" text="Wishlist" id="AddProductInventory" type="Unstyled" press="addProductInventory" width="100%" icon="sap-icon://heart-2"/>
+
+            <Button xmlns="sap.m" class="ipbutton3" text="Cart" id="AnalyticDashboard" type="Unstyled" press="analyticsDashboard" width="100%" icon="sap-icon://cart-5"/>
+
+            <Button xmlns="sap.m" class="ipbutton1" text="Address" id="AddProductMaster" type="Unstyled" press="addProductMaster" width="100%" icon="sap-icon://map"/>
+
+            <MenuButton xmlns="sap.m" class="ipbutton4" text="Pratik" id="user" type="Unstyled" width="100%" icon="sap-icon://employee">
+
+                <menu>
+
+                    <Menu id="_IDGenMenu1">
+
+                        <MenuItem id="_IDGenMenuItem1" text="LogOut" icon="sap-icon://log" press="onLogOut"/>
+
+
+                    </Menu>
+                   
+                </menu>
+
+            </MenuButton>
+           
+         
+       
+        </HBox>
+    </VBox>
+
+     <!-- <VBox id="vbox2" class="ipheader1" alignItems="Center" direction="Row" width="100%" displayInline="true" alignContent="Start">
+     
+
+        <HBox id="hbox2" class="hBox1" displayInline="true" fitContainer="true">
+
+           
+        <HBox id="_IDGenHBox2" class="ipbutton7">
+       
+        <items>
+           
+         
+       
+            <Select xmlns="sap.m" id="select5" icon="sap-icon://log">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Today' deal" id="item10" />
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Footwear" id="item11"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Shirt" id="item12"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item14"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-5" text="Kids" id="item42"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select4">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Best Seller" id="item8"  />
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobiles" id="item9"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Smart Watch" id="item43"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Books" id="item44"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Toys" id="item45"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select3">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="New Arrivals" id="item6"  />
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item7"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item46"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item47"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Airpods" id="item48"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select2">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Fashion" id="item4"  />
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Men's Top wear" id="item5"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Men's Footwear" id="item23"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Women's Top wear" id="item24"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Women's Footwear" id="item25"/>
+
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select1">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Beauty" id="item2"  />
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Eye shadow" id="item3"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Lipstick" id="item26"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Eyeliner" id="item27"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Foundation" id="item28"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select0_1679037485238">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Electronics" id="item0_1679037485238"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="TV" id="item1_1679037485238"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="AC" id="item29"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Refrigerator" id="item30"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="washing Machine" id="item31"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select0_1679036979187">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Accessories" id="item0_1679036979187"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobile Cables" id="item1_1679036979187"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Mobile Holders" id="item32"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Headphones" id="item33"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Airpods" id="item34"/>
+           
+         
+       
+                </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+           
+         
+       
+            <Select xmlns="sap.m" id="select0">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Kitchen" id="item0"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Kitchen containers" id="item1"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Gas Stoves" id="item35"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dinner Sets" id="item36"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Pressure Cooker" id="item37"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+
+            <Select xmlns="sap.m" id="select6">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Grocery" id="item15"/>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Dry Fruits" id="item38" />
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Rice" id="item39"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Butter" id="item40"/>
+
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-5" text="Namkeen" id="item41"/>
+           
+         
+       
+                    </items>
+           
+         
+       
+               
+           
+         
+       
+            </Select>
+
+            <Select xmlns="sap.m" id="select7">
+           
+         
+       
+                <items>
+           
+         
+       
+                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Travel" id="item89"/>
+       
+         
+       
+                    </items>
+           
+   
+       
+            </Select>
+     
+     
+           
+         
+       
+        </items>
+
+        </HBox>
+           
+         
+       
+        </HBox>
+    </VBox> -->
+
+<Carousel id="_IDGenCarousel1"  loop="true" width="100%" height="380px" >
+
+ 
+
+        <Image id="_IDGenImage88" src="https://www.91-cdn.com/hub/wp-content/uploads/2023/03/launched.png" width="90%" alt="Example picture of USB flash drive" />
+       
+    </Carousel>
+        <l:HorizontalLayout id="_IDGenHorizontalLayout1">
+
+   
+
+    <FlexBox id="_IDGenFlexBox1" direction="Column" alignItems="Start"  width="10%">
+
+ <Label id="_IDGenLabel1" text="Discount" class="filter"></Label>
+
+  <Button id="_IDGenButton9" text="10% and above" type="Default" />
+
+ <Button id="_IDGenButton10" text="20% and above" type="Default" />
+
+ <Button id="_IDGenButton11" text="50% and above" type="Default" />
+
+ </FlexBox>
+
+ <SlideTile id="_IDGenSlideTile9" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile17"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/t/a/x/-original-imaghmtch6qfmfxg.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent17" footer="4.3* 2536 Ratings 152 Reviews">
+                    <NewsContent id="_IDGenNewsContent17"
+                        contentText="POCO C50 (Royal Blue, 32 GB)  (2 GB RAM)"
+                        subheader="Extra ₹3250 off
+₹5,749" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile18"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/b/n/u/s-wx-d-pocket-102-grey-woxen-original-imagm4huvke5djre.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent18" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent18"
+                        contentText="WOXEN Men Slim Fit Solid Spread Collar Casual Shirt"
+                        subheader="Best of Men" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile10" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile19"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/6/x/j/-original-imaghxejqvpwfqh2.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent19" footer="4.3* 2356 Ratings 125 Reviews">
+                    <NewsContent id="_IDGenNewsContent19"
+                        contentText="APPLE iPhone 14 Pro Max (Deep Purple, 1 TB)"
+                        subheader=" Extra ₹11901 off
+₹1,77,999 " />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile20"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shrug/i/q/z/xs-1-maroon-rust-top-sangouri-original-imagkh9yhccbpdrp.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent20" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent20"
+                        contentText="SANGOURI Women 3/4th Sleeve Maroon Shrug"
+                        subheader="Best of Women" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+       
+        <SlideTile id="_IDGenSlideTile6" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile11"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/h/r/b/-original-imagh29eqd3zrvaf.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent11" footer="4.3* 236 Ratings 12 Reviews">
+                    <NewsContent id="_IDGenNewsContent11"
+                        contentText="MOTOROLA G62 5G (Midnight Gray, 128 GB)  (8 GB RAM)"
+                        subheader="Extra ₹8350 off
+₹16,649" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile12"
+                backgroundImage="https://rukminim1.flixcart.com/image/300/300/xif0q/microwave-new/q/t/u/-original-imagjnnzapcq7gmu.jpeg?q=90"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent12" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent12"
+                        contentText=" IFB 30 L Convection Microwa..."
+                        subheader="Best of Kitchen" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile7" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile13"
+                backgroundImage="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/y/z/r/-original-imagkp8yzvqffyhc.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent13" footer="4.1* 2536 Ratings 182 Reviews">
+                    <NewsContent id="_IDGenNewsContent13"
+                        contentText="realme 10 Pro 5G (Nebula Blue, 128 GB)  (8 GB RAM) "
+                        subheader="Extra ₹3000 off ₹19,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile14"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/top/p/f/n/l-black-puff-sleeve-top-zeugen-original-imagmu89tntmrbhx.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent14" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent14"
+                        contentText="IUGA
+Party Regular Sleeves Embroidered Women Black Top"
+                        subheader="Party wear" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile8" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile15"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/l0igvww0/mobile/j/d/g/-original-imagcafg6hbeeqwf.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent15" footer="4.1* 2386 Ratings 152 Reviews3">
+                    <NewsContent id="_IDGenNewsContent15"
+                        contentText="POCO M4 Pro 5G (Cool Blue, 128 GB)  (8 GB RAM)#JustHere "
+                        subheader="Extra ₹6000 off ₹15,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile16"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/kcuug7k0/bat/j/n/6/900-1100-6-cricket-bat-6575-ceat-six-hitman-original-imaftvxkywe3ujvh.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent16" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent16"
+                        contentText="Ceat six hitman CRICKET BAT Poplar Willow Cricket Bat  (900-1100 g)"
+                        subheader="Best Of Sports" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+</l:HorizontalLayout>
+
+<Carousel id="_IDGenCarousel12"  loop="true" width="100%" height="380px" >
+
+ 
+
+        <Image id="_IDGenImage888" src="https://assets.mspimages.in/wp-content/uploads/2021/05/mi_11_ultra_product_shots_feature_image.jpg" width="90%" alt="Example picture of USB flash drive" />
+         <Image id="_IDGenImage8" src="https://i.ytimg.com/vi/6uThej5fQaU/maxresdefault.jpg" width="90%" alt="Example picture of USB flash drive" />
+    </Carousel>
+<l:HorizontalLayout id="_IDGenHorizontalLayout2" >
+
+<FlexBox id="_IDGenFlexBox2" direction="Column" alignItems="Start"   width="10%">
+
+ <Label id="_IDGenLabel2" text="Customer Review " class="filter"></Label>
+
+ <VBox id = "vbox11" class = "vb_text" width="0%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+ <RatingIndicator id="RI_XS1" maxValue="5" class="sapUiSmallMarginBottom" value="5" iconSize="12px" tooltip="Rating Tooltip" />
+
+ </VBox>
+
+ <VBox id = "vbox12" alignItems="Center" direction="Row" displayInline="true" alignContent="Start"  class="filter" width="10%">
+
+ <RatingIndicator id="RI_XS2" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="12px" tooltip="Rating Tooltip" />
+
+ <Label id="two" text="and up"></Label>
+
+ </VBox>
+
+ <VBox id = "vbox13"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+ <RatingIndicator id="RI_XS3" maxValue="5" class="sapUiSmallMarginBottom" value="3" iconSize="12px" tooltip="Rating Tooltip" />
+
+ <Label id="three" text="and up"></Label>
+
+ </VBox>
+
+ <VBox id = "vbox14"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+ <RatingIndicator id="RI_XS4" maxValue="5" class="sapUiSmallMarginBottom" value="2" iconSize="12px" tooltip="Rating Tooltip" />
+
+ <Label id="four" text="and up"></Label>
+
+</VBox>
+
+ <VBox id = "vbox15"  class="filter" width="10%" alignItems="Center" direction="Row" displayInline="true" alignContent="Start">
+
+ <RatingIndicator id="RI_XS5" maxValue="5" class="sapUiSmallMarginBottom" value="1" iconSize="12px" tooltip="Rating Tooltip" />
+
+ <Label id="five" text="and up"></Label>
+
+ </VBox>
+ </FlexBox>
+
+<SlideTile id="_IDGenSlideTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile1"
+                backgroundImage="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/m/o/b/-original-imaghx9qkugtbfrn.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent1" footer="4.1* 2536 Ratings 182 Reviews">
+                    <NewsContent id="_IDGenNewsContent1"
+                        contentText="APPLE iPhone 14 (Starlight, 128 GB)#JustHere"
+                        subheader="Extra ₹7901 off ₹71,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile2"
+                backgroundImage="data:image/jpeg;base64,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"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent2" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent2"
+                        contentText="Electronics Get UP to 20% OFF"
+                        subheader="Best of Electronics" />
+                </TileContent>
+            </GenericTile> -->
+            
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile3"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/g/g/3/-original-imaggbrccwsnygar.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent3" footer="3.9* 536 Ratings 122 Reviews">
+                    <NewsContent id="_IDGenNewsContent3"
+                        contentText="Google Pixel 6a (Chalk, 128 GB)  (6 GB RAM)"
+                        subheader="Extra ₹14000 off ₹29,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile4"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/v/q/x/7-gb2089-9-5-reebok-forst-berry-punch-berry-original-imagg6m83zfsh2xv.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent4" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent4"
+                        contentText="Shoes Get UP to 20% OFF"
+                        subheader="Best of Footwear" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile5"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/v/f/c/-original-imaghgm2cequqqx4.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent5" footer="4.2* 2536 Ratings 12 Reviews">
+                    <NewsContent id="_IDGenNewsContent5"
+                        contentText="Infinix Hot 20 5G (Space Blue, 128 GB)  (6 GB RAM)"
+                        subheader="Extra ₹6500 off ₹13,499" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile6"
+                backgroundImage="https://rukminim1.flixcart.com/image/400/400/kfyasnk0/bean-bag-cover/5/b/n/xxl-gar-field-artwork-2-garfield-original-imafwaxy5hgjvsh2.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent6" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent6"
+                        contentText="Fire-Boltt Ninja Talk 1.39 Round Bluetooth Calling Smartwatch, Metal Body, 120 Sports Modes Smartwatch  (Pink Strap, 1.39)"
+                        subheader="₹1,799" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+        <SlideTile id="_IDGenSlideTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop" >
+            <GenericTile id="_IDGenGenericTile7"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/f/c/v/-original-imagehzbaw2wugme.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent7" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent7"
+                        contentText="SAMSUNG Galaxy F23 5G (Copper Blush, 128 GB)  (6 GB RAM) "
+                        subheader="Extra ₹7000 off ₹16,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile8"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/khuvxjk0-0/vehicle-pull-along/x/w/y/friction-powered-mini-monster-cars-for-kids-with-big-rubber-original-imafxruqgz7rw4xw.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent8" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent8"
+                        contentText="Mirana USB Rechargeable Racing RC Car | High Speed Remote Control Toy  (Dark Purple)"
+                        subheader="Best Of Kids" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+</l:HorizontalLayout>
+
+<Carousel id="_IDGenCarousel13"  loop="true" width="100%" height="380px" >
+
+ 
+
+        <Image id="_IDGenImage78" src="https://www.91-cdn.com/hub/wp-content/uploads/2023/03/best-phones-at-mwc-2023.jpeg" width="90%" alt="Example picture of USB flash drive" />
+       
+    </Carousel>
+<l:HorizontalLayout id="_IDGenHorizontalLayout3" >
+<VBox id="_IDGenFlexBox3" >
+<Label id="_IDGenLabel3" text="Price" class="filter"></Label>
+
+ <Button id="_IDGenButton12" text="under 1000" type="Default" />
+
+ <Button id="_IDGenButton13" text="1000 - 2000" type="Default" />
+
+ <Button id="_IDGenButton14" text ="2000-5000" type ="Default"/>
+
+ <Button id="_IDGenButton15" text ="5000 and above" type = "Default"/>
+ </VBox>
+
+ <SlideTile id="_IDGenSlideTile5" class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="5500" >
+            <GenericTile id="_IDGenGenericTile9"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/h/r/b/-original-imagh29eqd3zrvaf.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" actionButtons="" >
+                <TileContent id="_IDGenTileContent9" footer="3.3* 136 Ratings 152 Reviews">
+                    <NewsContent id="_IDGenNewsContent9"
+                        contentText="realme 10 Pro+ 5G (Hyperspace, 128 GB)  (8 GB RAM)#JustHere"
+                        subheader="Extra ₹2000 off ₹25,999" />
+                        <OverflowToolbar id="_IDGenOverflowToolbar1" design="Transparent" class="sapContrast">
+
+<ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+
+<Button id="_IDGenButton5" icon="sap-icon://heart" tooltip="Add to Wishlist" press="onAddToWishListPress" />
+ <Button id="_IDGenButton6" icon="sap-icon://cart" tooltip="Add to cart" press="onAddToCartPress" />
+
+<Button id="_IDGenButton7" icon="sap-icon://accelerated" tooltip="Buy Now" press="onBuyNowPress" />
+
+</OverflowToolbar>
+
+
+                </TileContent>
+                                <actionButtons><Button id="_IDGenButtodn5" icon="sap-icon://heart" tooltip="Add to Wishlist" press="onAddToWishListPress" /></actionButtons>
+
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile10"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent10" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent10"
+                        contentText="Lenovo IdeaPad Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15ACH6 Gaming Laptop "
+                        subheader="Best of Laptop" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile456" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile113"
+                backgroundImage="https://rukminim1.flixcart.com/image/300/300/xif0q/mobile/s/y/0/-original-imaggbrbxkqr3v3u.jpeg?q=90"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent115" footer="4.0* 236 Ratings 12 Reviews">
+                    <NewsContent id="_IDGenNewsContent113"
+                        contentText="Google Pixel 6a (Charcoal, 128 GB)  (6 GB RAM)#JustHere"
+                        subheader="Extra ₹14000 off ₹29999 - 31% off" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile172"
+                backgroundImage="https://rukminim1.flixcart.com/image/300/300/xif0q/microwave-new/q/t/u/-original-imagjnnzapcq7gmu.jpeg?q=90"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent152" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent125"
+                        contentText=" IFB 30 L Convection Microwa..."
+                        subheader="Best of Kitchen" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile85" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile1385"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/6/c/5/-original-imagmefcgvntdtha.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent1853" footer="4.1* 231 Ratings 112 Reviews">
+                    <NewsContent id="_IDGenNewsContent135"
+                        contentText="SAMSUNG Galaxy A14 5G (Dark Red, 128 GB)  (6 GB RAM) "
+                        subheader="Extra ₹2000 off ₹18,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile145"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/xif0q/top/p/f/n/l-black-puff-sleeve-top-zeugen-original-imagmu89tntmrbhx.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent146" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent145"
+                        contentText="IUGA
+Party Regular Sleeves Embroidered Women Black Top"
+                        subheader="Party wear" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+        <SlideTile id="_IDGenSlideTile81" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  >
+            <GenericTile id="_IDGenGenericTile151"
+                backgroundImage="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/j/u/t/-original-imagh2jqy8pkhdhz.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileOne" >
+                <TileContent id="_IDGenTileContent151" footer="4.3* 236 Ratings 12 Reviews">
+                    <NewsContent id="_IDGenNewsContent152"
+                        contentText="Infinix Zero Ultra (Genesis Noir, 256 GB)  (8 GB RAM) "
+                        subheader="Extra ₹17000 off ₹32,999" />
+                </TileContent>
+            </GenericTile>
+            <!-- <GenericTile id="_IDGenGenericTile116"
+                backgroundImage="https://rukminim1.flixcart.com/image/612/612/kcuug7k0/bat/j/n/6/900-1100-6-cricket-bat-6575-ceat-six-hitman-original-imaftvxkywe3ujvh.jpeg?q=70"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent id="_IDGenTileContent163" footer="March 31, 2023">
+                    <NewsContent id="_IDGenNewsContent16."
+                        contentText="Ceat six hitman CRICKET BAT Poplar Willow Cricket Bat  (900-1100 g)"
+                        subheader="Best Of Sports" />
+                </TileContent>
+            </GenericTile> -->
+        </SlideTile> 
+
+
+</l:HorizontalLayout>
+
+
+
+
+
+
+
+
+
+
+    </Page>
+    </mvc:View>

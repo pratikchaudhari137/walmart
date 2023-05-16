@@ -1,0 +1,421 @@
+* ------------------------ LOGIN PAGE ---------------------- */
+.inp input{
+    color: white;
+    background: rgb(5, 36, 94);
+    font-weight: 1px;
+    float: right;
+    display: inline;
+   
+}
+.view{
+      background-image: url("https://i.pinimg.com/originals/dc/6d/f7/dc6df7e28e51cb7dcec3bdda8b502f7e.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .view1{
+    background-image: url("https://img.freepik.com/premium-photo/shopping-cart-ejected-from-mobile-phone-with-many-shopping-bag_307211-459.jpg?size=626&ext=jpg&ga=GA1.2.322876138.1679475079&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+/* .view2{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/22/15/31/background-image-1273097_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.view3{
+    background-image: url("https://1001freedownloads.s3.amazonaws.com/vector/427561/preview/07.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+input::-webkit-input-placeholder {
+    color: white !important;
+    }
+     
+    input:-moz-placeholder { /* Firefox 18- */
+    color: white  !important;  
+    }
+     
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: white  !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+    color: white  !important;  
+    }
+
+
+.label{
+    color: rgb(5, 40, 105);
+    font-weight: bold;
+}
+
+.button{
+    color: black;
+    background-color: white;
+    border-radius: 10pc;
+    border-color: rgb(4, 15, 47);
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 140px;
+}
+.signup{
+    color: black;
+    background-color: white;
+    border-radius: 10pc;
+    border-color: rgb(4, 15, 47);
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 100px;
+}
+
+.loginvBox1{
+    border-radius: 20pc;
+    margin: 120px auto;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    margin-left: 150px;
+   
+}
+
+.logintitle{
+    float: right;
+    display: inline;
+    font-size: 49px;
+    font-weight: bolder;
+    color: indianred;
+    float: right;
+    margin-left: 100px;
+   
+}
+
+  .loginvBox2{
+    border: 1px solid white;
+    height: 270px;
+    width: 60%;
+    margin: 330px;
+    box-shadow: 2px 2px 10px;
+    padding-bottom: 150px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* background-image: url("https://media.istockphoto.com/id/1337176699/photo/checklist-concept-check-mark-on-wooden-blocks-on-table-with-copy-space.jpg?b=1&s=170667a&w=0&k=20&c=7CHnF3g2XkoIXrKMsW0RTQZxJcK6z-H5J6yBKramG8E=");  
+    background-repeat: no-repeat;
+    background-size: cover;  */
+    margin-inline: auto;
+}
+ 
+
+ .loginvBox3{
+    padding-top: 60px;
+    padding-right: 10px;
+ }
+   
+
+.loginvBox4{
+    padding:20px;
+    padding-right: 30px;
+
+   
+}
+
+.loginvBox5{
+    padding:20px;
+    padding-right: 30px;
+    margin-top: 5px;
+   
+}
+.loginvBox6{
+    padding:20px;
+    padding-right: 30px;
+    margin: 5px;
+}
+.loginvBox7{
+    padding:20px;
+    padding-right: 30px;
+    margin: 5px;
+   
+}
+.sapMInputBaseInner:hover{
+    background-color:  black ;
+    border-color: aliceblue
+}
+.sapMInputBaseInner{
+    background-color: black;
+    margin-left: 2px;
+    color: white;
+}
+.button1{
+    color: black;
+    background-color: white;
+    border-radius: 10pc;
+    border-color: rgb(4, 15, 47);
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+}
+.button2{
+    color: black;
+    background-color: white;
+    border-radius: 10pc;
+    border-color: rgb(4, 15, 47);
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+}
+.SignupvBox2{
+    border: 1px solid white;
+    height: 270px;
+    width: 60%;
+    margin-left: 480px;
+    box-shadow: 2px 2px 10px;
+    padding-bottom: 150px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* background-image: url("https://media.istockphoto.com/id/1337176699/photo/checklist-concept-check-mark-on-wooden-blocks-on-table-with-copy-space.jpg?b=1&s=170667a&w=0&k=20&c=7CHnF3g2XkoIXrKMsW0RTQZxJcK6z-H5J6yBKramG8E=");  
+    background-repeat: no-repeat;
+    background-size: cover;   */
+    margin-top: 170px;
+}
+/* -------------------------- */
+.ipbutton5{
+    margin-left: 20px;
+   padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 20px;
+   
+   
+}.ipbutton6{
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 20px;
+   
+}.ipbutton7{
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 20px;
+   
+}
+.ipbutton8{
+    margin-left:50px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 20px;
+   
+}.ipbutton9{
+    margin-left: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 20px;
+   
+}.ipbutton10{
+    margin-left: 65px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+   
+   
+}.ipbutton11{
+    margin-left: 75px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+   
+}
+.ipbutton12{
+    margin-left: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+   
+   
+}
+.ipheader3{
+    background-color: white;
+}
+.ipbutton1{
+    margin-left: 10px;
+    background-color: skyblue;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton1:hover{
+    background-color: cornflowerblue;
+    color: white
+}
+
+.ipbutton2{
+    margin-left: 8px;
+    background-color: skyblue;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton2:hover{
+    background-color: cornflowerblue;
+    color: white
+}
+
+
+.ipbutton3{
+    margin-left: 10px;
+    background-color: skyblue;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton3:hover{
+    background-color: cornflowerblue;
+    color: white
+}
+
+
+.ipbutton4{
+    margin-left: 11px;
+    background-color: skyblue;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton4:hover{
+    background-color: cornflowerblue;
+    color: cornflowerblue
+   
+}
+.ipheader{
+    background-color: lightseagreen;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+   
+   
+}
+.ipheader1{
+    background-color: white;
+    position:-webkit-sticky;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+   
+   
+   
+}
+.iptitle{
+    color:black;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.ipbutton13{
+    margin-left: 5px;
+   padding: 5px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton14{
+    margin-left: 5px;
+   padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipbutton15{
+    margin-left: 5px;
+   padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    margin-right: 10px;
+   
+}
+.ipheader4{
+    background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjr7IsKx_OY2z2Di6LH6wv1hZkAcrq5_zgmeMsrxB3Y_Goj7RikaGKr_FISjk4Vp3_ML8&usqp=CAU";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ipheader5{
+   
+    border-radius: 8px;
+    border-color: black;
+}
+.sapMSltLabel{
+   
+   padding: 30px;
+   margin-left: 10px;
+   background-color: lightseagreen;
+}
+.sapMSlt{
+    background-color: black;
+
+}
+.ip1{
+    margin-left: 600px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.ip2{
+    margin-left: 50px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.ip3{
+    margin-left: 60px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.ip4{
+    margin-left: 600px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.ip5{
+    margin-left: 50px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.ip6{
+    margin-left: 60px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: white;
+    margin-right: 20px;
+   
+}
+.sapUiTinyMarginBegin sapUiTinyMarginTop{
+    float: left;
+    animation : slide 2s infinite;
+}

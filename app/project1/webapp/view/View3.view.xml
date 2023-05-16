@@ -1,0 +1,86 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="project1.controller.View3" displayBlock="true" class="view1"   >
+
+ <!-- <Script>
+            function onAfterRendering() {
+      // Load the Twilio JavaScript SDK from the Twilio CDN
+      const script = document.createElement('script');
+      script.src = 'https://sdk.twilio.com/js/client/releases/x.x.x/twilio.js';
+      document.head.appendChild(script);
+    }
+  </Script>  -->
+
+
+ 
+ <VBox id="vbox2" class="SignupvBox2" width="40%" height="60%" justifyContent="SpaceBetween" alignContent="SpaceBetween" alignItems="Center" backgroundDesign="Solid">
+
+           
+             <VBox id="vbox3" class="loginvBox3" alignItems="Center" direction="Row" alignContent="SpaceBetween" justifyContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="Username" id="username" required="true" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_username" textAlign="Center" type="Email"  required="true" fieldWidth="100%" placeholder="Enter Your Username" />
+
+            </VBox>
+
+           
+
+              <VBox id="vbox6" class="loginvBox6" alignItems="Center" direction="Row" alignContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="Mail-Id" required="true" id="mailid" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_mail" textAlign="Center" type="Email" required="true" fieldWidth="100%" placeholder="Enter Your mail" />
+
+            </VBox>  
+
+            <VBox id="vbox4" class="loginvBox4" alignItems="Center" direction="Row" alignContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="Password" required="true" id="password" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_password" type="Password" textAlign="Center"  required="true" fieldWidth="100%" placeholder="Enter Your Password" />
+
+            </VBox>
+
+              <VBox id="vbox5" class="loginvBox5" alignItems="Center" direction="Row" alignContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text=" Re-Password  " required="true" id="repassword" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_repassword" textAlign="Center" type="Password" required="true" fieldWidth="100%" placeholder="Enter Your Password" />
+
+            </VBox>    
+
+            <VBox id="vbox7" class="loginvBox7" alignItems="Center" direction="Row" alignContent="SpaceBetween" displayInline="true" fitContainer="true">
+
+                <Label class="label" text="Phone" required="true" id="phone" textAlign="Initial" />
+
+                <Input class="inp" width="100%" id="inp_phone" textAlign="Center"  type="Number" required="true" fieldWidth="100%" placeholder="Enter Your Password" />
+
+            </VBox>  
+       
+
+            <Button xmlns="sap.m" class="button1" text="Signup" id="login" type="Unstyled" press="newUser" width="100%" icon= "sap-icon://log" />
+
+             <!-- <script src="/home/user/projects/WiproMart/app/project1/webapp/controller/SignIn.controller.js" /> -->
+           
+           
+               
+
+        </VBox> 
+
+         <!-- <script>
+           var script = document.createElement('script');
+           script.type = 'text/javascript';
+           script.src = 'https://sdk.twilio.com/js/sync/releases/3.0.1/twilio-sync.min.js';
+           script.onload = function () {
+           MessageStrip("Loaded");
+    };
+    document.head.appendChild(script);
+  </script>
+         -->
+       
+             <!-- <VBox id="vbox3" class="ipmessage" alignContent="Inherit" alignItems="Center">
+                <MessageStrip xmlns="sap.m" text="Congratulations! You have successfully logged in...!" showIcon="false" showCloseButton="true" id="strip0" type="Success" />
+            </VBox>  -->
+           
+        </mvc:View> 
+       
+
